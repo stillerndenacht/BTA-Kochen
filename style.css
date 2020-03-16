@@ -17,15 +17,13 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: xx-large;
-  font-style: italic;
+  font-size: large;
 }
 ul {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
   border: 100px;
-  color: lawngreen;
   background-color: none;
 }
 #logo {
@@ -41,6 +39,21 @@ header nav {
 }
 .show {
   display: block;
+  position: absolute;
+  top: 64px;
+  background: white;
+  width: 100%;
+  height: calc(100vh - 64px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.show li{
+  margin: 1rem;
+}
+.overflow{
+  overflow: hidden;
 }
 #hero {
   color: white;
@@ -84,7 +97,7 @@ header nav {
   background-color: #374a67;
   color: white;
 }
-h2{
+h2 {
   text-align: center;
 }
 .card {
@@ -125,18 +138,35 @@ h2{
 .card a img {
   width: 100%;
 }
-aside{
+aside {
   background-color: #04122b;
   color: white;
   text-align: center;
   padding: 2rem;
 }
-aside h2 span{
+aside h2 span {
   display: block;
 }
-form input{
+form input {
   text-align: center;
   padding: 10px;
+  border-color: #374a67;
+  border-radius: 4px 0 0 4px;
+  margin-right: 0;
+}
+.impressumetc ul {
+  text-align: center;
+  padding: 2rem;
+  color: #0a3175;
+}
+.social ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 2rem;
+}
+.social li{
+  margin: 0 1rem;
 }
 
 @media (min-width: 768px) {
@@ -152,9 +182,15 @@ form input{
   nav li {
     margin: 10px;
   }
-  .rowrezepte{
+  .rowrezepte {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
   }
 }
